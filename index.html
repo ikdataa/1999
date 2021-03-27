@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <style type="text/css">
+        button{
+            width: 120px;
+            background-color: #888888;
+            color: azure;
+            border-radius: 5px;
+        }
+        #sss,#www{
+            border: cadetblue 2px solid;
+            border-radius: 5px;
+        }
+    </style>
+    <body>
+    <input type="number" id="sss" placeholder="输入长度"  > <br>
+    <input type="number" id="www" placeholder="输入宽度"  > <br>
+    <button onclick="kkk() ">计算</button>
+    <div id="aaa"></div>
+        <script type="text/javascript">
+            var a
+            var b
+            var xx
+            function kkk() {
+                a=document.getElementById("sss").value
+                b=document.getElementById("www").value
+                var c=(a+b)*2
+                c=c.toFixed(2)
+                var d=a*b
+                d=d.toFixed(2)
+                document.write('矩形周长为：'+ c + '矩形面积为：' + d)
+            }
+        </script>
+    </body>
+</html>
